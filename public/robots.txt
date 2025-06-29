@@ -1,0 +1,18 @@
+# ===================================================================
+# robots.txt for AskifyAI
+# ===================================================================
+
+# Allow all reputable search engines full access to the site.
+# We trust them to index our content appropriately.
+User-agent: *
+Allow: /
+
+# Disallow access to API routes and internal Next.js files,
+# as they do not contain content relevant for users or search indexing.
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+
+# Specify the location of the sitemap for all search engines.
+# This helps them discover all our important pages efficiently.
+Sitemap: https://www.askifyai.tech/sitemap.xml
